@@ -32,26 +32,9 @@
 <body class="no-sidebar">
 
 	<!-- Header -->
-	<div id="header">
-		<div class="container">
-
-			<!-- Logo -->
-			<div id="logo">
-				<h1><a href="index.html">Golden Barbershop</a></h1>
-				<span>A revolução do seu corte de cabelo</span>
-			</div>
-
-			<!-- Nav -->
-			<nav id="nav">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="cadastro.html">Cadastro</a></li>
-					<li><a href="agendamento.html">Agendamento</a></li>
-					<li class="active"><a href="servicos.html">Serviços</a></li>
-				</ul>
-			</nav>
-		</div>
-	</div>
+<?php
+include "menu.php";
+?>
 
 	<!-- Footer -->
 	<div id="featured">

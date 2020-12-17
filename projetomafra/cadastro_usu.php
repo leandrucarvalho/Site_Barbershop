@@ -16,8 +16,11 @@ if($senha != $confirmeasenha){
 
     exit;
 }
+
+$senhabd=md5($senha);
+
 //var_dump($_POST);
-$result_usu = "INSERT INTO cad_usuario (nome_usu, email_usu, senha_usu, telefone_usu) VALUES ('$nome', '$email','$senha', '$telefone')";
+$result_usu = "INSERT INTO cad_usuario (nome_usu, email_usu, senha_usu, telefone_usu) VALUES ('$nome', '$email','$senhabd', '$telefone')";
 $resultado_usuario = mysqli_query($conn, $result_usu);
 
 echo "<script>alert('cadastrado com sucesso')</script> ";
