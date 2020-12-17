@@ -67,24 +67,24 @@
 					<form id="formCadastro" data-toggle="validate" role="form" action="cadastro_usu.php" method="POST">
 						<div class="form-group">
 							<label for="textNome" name= "nome" class="control-label">Nome</label>
-							<input id="textNome" class="form-control" placeholder="Digite seu Nome..." type="text">
+							<input id="textNome" class="form-control" name="nome" placeholder="Digite seu Nome..." type="text">
 						</div>
 						<div class="form-group">
 							<label for="textNome" name= "telefone" class="control-label">Telefone</label>
-							<input id="textNome" class="form-control" placeholder="Digite seu Telefone..." type="text" onkeypress="$(this).mask('(00) 0000-00009')">
+							<input id="textNome" class="form-control" name="telefone" placeholder="Digite seu Telefone..." type="text" onkeypress="$(this).mask('(00) 0000-00009')">
 						</div>
 						<div class="form-group"> <label for="inputEmail" name= "email" class="control-label">Email</label>
-							<input id="inputEmail" class="form-control" placeholder="Digite seu E-mail" type="email">
+							<input id="inputEmail" class="form-control" name="email" placeholder="Digite seu E-mail" type="email">
 						</div>
 						<div class="form-group"> <label for="inputPassword" name= "senha" class="control-label">Senha</label>
-							<input type="password" class="form-control" id="inputPassword"
+							<input type="password" name="senha"class="form-control" id="inputPassword"
 								placeholder="Digite sua Senha..."> </div>
 						<div class="form-group"> <label for="inputConfirm" name= "confirmeasenha" class="control-label">Confirme a
 								Senha</label>
-							<input type="password" class="form-control" id="inputConfirm"
+							<input type="password" name="confirmeasenha" class="form-control" id="inputConfirm"
 								placeholder="Confirme sua Senha..."> </div>
 						<div class="checkbox">
-							<label> <input type="checkbox"> Marque este item. </label>
+							<label> <input required name="termos" type="checkbox"> Marque este item. </label>
 						</div> 
 						<div class="col-sm-10">
 						<button type="submit" class="btn btn-primary">Cadastrar</button>
